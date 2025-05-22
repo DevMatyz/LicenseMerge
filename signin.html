@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Sign In - LicenseMerge</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script type="module" src="firebase-setup.js"></script>
 </head>
-<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
-  <form class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-sm">
-    <h2 class="text-2xl font-bold mb-6">Sign In</h2>
-    <input type="email" placeholder="Email" class="w-full p-3 mb-4 rounded bg-gray-700 text-white">
-    <input type="password" placeholder="Password" class="w-full p-3 mb-4 rounded bg-gray-700 text-white">
-    <button class="w-full bg-yellow-500 text-black p-3 rounded hover:bg-yellow-400">Sign In</button>
-  </form>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+  <div class="bg-gray-800 p-8 rounded-xl shadow-xl w-full max-w-md space-y-4">
+    <h2 class="text-2xl font-bold">Sign In</h2>
+    <input id="signin-email" type="email" placeholder="Email" class="w-full p-2 rounded text-black"/>
+    <input id="signin-password" type="password" placeholder="Password" class="w-full p-2 rounded text-black"/>
+    <button onclick="signIn()" class="bg-indigo-600 w-full py-2 rounded hover:bg-indigo-500 transition">Login</button>
+    <p>Don't have an account? <a href="signup.html" class="text-indigo-400 underline">Sign Up</a></p>
+  </div>
 </body>
 </html>
