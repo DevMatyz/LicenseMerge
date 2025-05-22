@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LicenseMerge</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .floating-text {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .glow-underline {
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.5s ease;
+    }
+    .glow-underline:hover {
+      border-color: #a78bfa;
+      text-shadow: 0 0 10px #a78bfa;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text-4xl font-bold mb-4 glow-underline floating-text">Simplifies Your Life</h1>
+  <div id="auth-buttons">
+    <a href="signup.html" class="border border-purple-400 text-purple-400 px-6 py-2 rounded-lg mr-4 hover:bg-purple-600 hover:text-white transition">Sign Up</a>
+    <a href="signin.html" class="border border-purple-400 text-purple-400 px-6 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition">Sign In</a>
+  </div>
+</body>
+</html>
