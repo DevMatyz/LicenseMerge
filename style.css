@@ -6,7 +6,7 @@
   font-family: 'Inter', sans-serif;
 }
 
-/* Global */
+/* Base styles */
 body {
   background-color: #0d1117;
   color: #c9d1d9;
@@ -34,6 +34,7 @@ nav a {
   color: #c9d1d9;
 }
 
+/* Buttons */
 .btn {
   padding: 0.5rem 1rem;
   background-color: #238636;
@@ -49,13 +50,24 @@ nav a {
   background-color: #2ea043;
 }
 
+.btn-outline,
 .outlined {
   background: transparent;
-  border: 1px solid #a970ff;
-  color: #a970ff;
+  border: 1px solid #8b5cf6;
+  color: #8b5cf6;
+  border-radius: 6px;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Hero Section */
+.btn-outline:hover,
+.outlined:hover {
+  background-color: #8b5cf6;
+  color: #fff;
+}
+
+/* Hero section */
 .hero {
   padding: 5rem 2rem;
   text-align: center;
@@ -113,7 +125,7 @@ nav a {
   background-color: #161b22;
 }
 
-/* Auth Pages */
+/* Auth Background */
 body.auth-bg {
   background-color: #0d1117;
   color: #fff;
@@ -124,6 +136,7 @@ body.auth-bg {
   height: 100vh;
 }
 
+/* Auth Container */
 .auth-container {
   max-width: 400px;
   width: 90%;
@@ -153,27 +166,14 @@ body.auth-bg {
   border-radius: 6px;
 }
 
-.btn-outline {
-  padding: 0.75rem;
-  border: 1px solid #8b5cf6;
-  background: transparent;
-  color: #8b5cf6;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-outline:hover {
-  background-color: #8b5cf6;
-  color: #fff;
-}
-
+/* Divider */
 .divider {
   text-align: center;
   margin: 1rem 0;
   color: #888;
 }
 
+/* Google Button */
 .google-btn {
   display: flex;
   align-items: center;
@@ -192,6 +192,7 @@ body.auth-bg {
   height: 20px;
 }
 
+/* Auth Links */
 .auth-links {
   margin-top: 1.5rem;
   text-align: center;
@@ -203,6 +204,7 @@ body.auth-bg {
   text-decoration: none;
 }
 
+/* Error Message */
 .error-box {
   display: flex;
   align-items: center;
@@ -219,6 +221,7 @@ body.auth-bg {
   font-weight: bold;
 }
 
+/* Utility */
 .hidden {
   display: none;
 }
